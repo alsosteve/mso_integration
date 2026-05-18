@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+
+.env
+.venv/
+venv/
+
+data/raw/
+data/external/
+*.csv
+*.xlsx
+*.xml
+*.zip
