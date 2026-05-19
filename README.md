@@ -3,7 +3,7 @@
 Preparing data for analysis of nonprofit hospital data
 
 TODO:
-- Connect to PROREPUBLICA API 
+- Connect to PROPUBLICA API 
 - Collect 990/MSO-related data
 - Extract identifiers and MSO indicators
 - Merge with HCRIS-side data
