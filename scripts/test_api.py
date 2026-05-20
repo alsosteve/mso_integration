@@ -1,13 +1,15 @@
 # testing api connection
 print("Start")
 
-import requests
 from config import API_BASE_URL
+import requests
+import json
 
 url = f"{API_BASE_URL}/search.json?q=propublica"
 
-# API call
 response = requests.get(url)
+data = response.json()
 
-print(response.status_code)
-print(response.text[:500])
+print(data.keys())
+print(data["organizations"][0].keys())
+print(json.dumps(data["organizations"][0], indent=2))

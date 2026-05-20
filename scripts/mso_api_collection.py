@@ -1,10 +1,12 @@
 import requests
 from config import API_BASE_URL
+import json
 
-url = f"{API_BASE_URL}/search.json?q=propublica"
+url = f"{API_BASE_URL}"
 
 # API call
 response = requests.get(url)
 
-print(response.status_code)
-print(response.text[:500])
+print("Hello World")
+# print(json.dumps(response.json(), indent=2)[:3000])
+print(response.json()["total_results"])
