@@ -1,3 +1,8 @@
+"""
+This file randomly generates a sample of size 500 for unique ein's
+in the hospital cros walk data.
+"""
+
 import json
 from pathlib import Path
 

@@ -1,3 +1,9 @@
+"""
+Find IRS XML index matches for the 500 sampled hospital-related EINs.
+This script does not download the actual XML files yet.
+It only creates a CSV showing which IRS filings matched the sampled EINs.
+"""
+
 import ssl
 import urllib.request
 from io import StringIO
@@ -45,7 +51,7 @@ for year in INDEX_YEARS:
     print(index_url)
 
     try:
-        # Mac/Python sometimes has IRS SSL certificate issues.
+        # Mac/Python may have IRS SSL certificate issues.
         # This reads the IRS CSV while bypassing that local certificate problem.
         context = ssl._create_unverified_context()
 
