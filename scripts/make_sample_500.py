@@ -7,7 +7,7 @@ import pandas as pd
 # project paths
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 CBI_FILE = PROJECT_ROOT / "cbi_hospitals_cleaned.json"
-OUTPUT_FILE = PROJECT_ROOT / "data" / "output" / "sample_500_unique_hospital_eins.csv"
+OUTPUT_FILE = PROJECT_ROOT / "data" / "output" / "ein_sample_500.csv"
 
 OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
 
