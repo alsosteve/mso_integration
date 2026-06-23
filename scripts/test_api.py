@@ -81,6 +81,12 @@
 # print("Tax period:", latest_filing.get("tax_prd"))
 # print("PDF URL:", latest_filing.get("pdf_url"))
 
+from pathlib import Path
+import sys
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+sys.path.append(str(PROJECT_ROOT))
+
 from config import API_BASE_URL
 import requests
 
