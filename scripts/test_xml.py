@@ -12,7 +12,7 @@ TARGET_STATE = "AL"
 TARGET_YEAR = 2022
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-OUTPUT_DIR = PROJECT_ROOT / "data" / "working" / "xml_lookup"
+OUTPUT_DIR = PROJECT_ROOT / "data" / "test" / "xml_lookup"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
